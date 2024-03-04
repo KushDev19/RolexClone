@@ -1,0 +1,167 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "helvetica now text w02";
+}
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#nav{
+    color: wheat;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(to right,#0C4129,#187048);
+    padding: 3vh 8vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subnav{
+    width: 45%;
+    align-items: center;
+    right: 7%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8%;
+}
+
+.subnav i span{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.subnav img{
+    background-color: #e894ba;
+    filter: invert(1); 
+}    
+
+
+#btnMenu{
+    gap: 1%;
+    width: 45%;
+    align-items: center;
+    display: flex;
+    background: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.subnav i{
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.subnav i:nth-child(3):hover{
+    color: #61BD93;
+}
+
+.subnav i:nth-child(2):hover{
+    color: #61BD93;
+}
+
+#btnSearch{
+    background: transparent;
+    border-style: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+#btnSearch i{
+    font-size: 20px;
+    color: white;
+}
+
+#btnSearch:hover i{
+    color: #61BD93;
+}
+
+#btnMenu span{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#btnMenu svg{
+    color: white;
+    transition: all 0.3s;
+}
+
+#btnMenu:hover span{
+    color: #61BD93;
+}
+
+#btnMenu:hover svg{
+    color: #61BD93;
+}
+
+#logo{
+    align-items: center;
+    justify-self: center;
+    width: 45px;
+    height: 45px;
+    padding-bottom: 0.2vh;
+}
+
+.logodiv{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#herodiv{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+#herodiv video{
+    z-index: 9;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay{
+    text-align: center !important;
+    top: 35%;
+    width: 100%;
+    bottom: 35%;
+    z-index: 11;
+    position: absolute;
+    color: white;
+    
+}
+.overlay h3{
+    font-size: 2vw;
+    font-family: "font";
+}
+
+.overlay h1{
+    font-size: 6vw;
+}
+
+.black{
+    height: 100%;
+    width: 100%;
+    position: absolute !important;
+    z-index: 10;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.795), rgba(255, 255, 255, 0.236));
+}
